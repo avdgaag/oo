@@ -1,0 +1,9 @@
+{
+  "name"          : "OO",
+  "description"   : "Some very simple helper methods to help you do object-oriented javascript coding.",
+  "homepage"      : "http://avdgaag.github.com/oo/",
+  "author"        : "Arjan van der Gaag <arjan@arjanvandergaag.nl>",
+  "repository"    : {"type": "git", "url": "git://github.com/avdgaag/oo.git"},
+  "main"          : "src/oo.js",
+  "version"       : "0.1.0"
+}
