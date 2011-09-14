@@ -19,7 +19,7 @@ var Module = {
 
 var Child = (function() {
     OO.inherits(Child, Parent);
-    OO.extend(Child.prototype, Module);
+    OO.include(Child, Module);
     function Child(foo, bar) {
         Child.__super__.constructor.call(this, foo);
         this.bar = bar;

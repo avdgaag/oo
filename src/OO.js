@@ -43,7 +43,7 @@
 //
 //     var Child = (function() {
 //         OO.inherits(Child, Parent);
-//         OO.extends(Child.prototype, Module);
+//         OO.include(Child, Module);
 //         function Child(foo, bar) {
 //             Child.__super__.constructor.call(this, foo);
 //             this.bar = bar;
@@ -98,6 +98,19 @@
             }
         },
 
+        // Include a module into this class
+        //
+        // This is a variety of extend that works on an objects `prototype`
+        // property rather than the object itself. The following are
+        // equivalent:
+        //
+        //     extend(Host.prototype, Module);
+        //     include(Host, Module);
+        // 
+        include: function(host, guest) {
+            this.extend(host.prototype, guest);
+        },
+
         // Simulate inheritence of one object (`child`) from another (`parent`).
         //
         // This creates a _ghost-class_ that shares its prototype with the parent,
@@ -147,7 +160,7 @@
     };
 
     // ### Exporting to gobal object
-    //
+
     // Make the OO object available on the window object -- the global
     // object when running inside a browser -- or as an export, so you
     // can use it as a CommonJS module.
