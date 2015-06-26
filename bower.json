@@ -1,0 +1,22 @@
+{
+  "name": "oo",
+  "version": "0.1.0",
+  "homepage": "https://avdgaag.github.com/oo",
+  "authors": [
+    "Arjan van der Gaag <arjan@arjanvandergaag.nl>"
+  ],
+  "description": "A few simple helper methods to help you do object-oriented javascript",
+  "main": "src/OO.js",
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
